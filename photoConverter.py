@@ -74,3 +74,10 @@ def photoMerge(directory1,directory2):
     
     plt.imsave(newdirectory1,img1)
     plt.imsave(newdirectory2,img2)
+
+#Simple Code to shuffle layers of pixels to experiment with image
+def shuffle(directory):
+    image = mpImg.imread(directory)
+    random.shuffle(image)
+    plt.imsave(".\\shuffle.png",image)
+
